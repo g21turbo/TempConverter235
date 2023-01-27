@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="333.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tempconverter235.TempConverterController">
+    <children>
+        <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="600.0">
+            <menus>
+                <Menu mnemonicParsing="false" text="File">
+                    <items>
+                        <MenuItem fx:id="closeMenuItem" mnemonicParsing="false" text="Close" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Delete" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                    <items>
+                        <MenuItem fx:id="helpMenuItem" mnemonicParsing="false" onAction="#showHelp" text="Help" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+        <ComboBox fx:id="comboBox1" layoutX="35.0" layoutY="90.0" prefHeight="25.0" prefWidth="170.0" promptText="Select a Unit to Convert" />
+        <ComboBox fx:id="comboBox2" layoutX="35.0" layoutY="178.0" prefHeight="25.0" prefWidth="170.0" promptText="Select a Unit to Convert" />
+        <TextArea fx:id="resultArea" layoutX="340.0" layoutY="90.0" prefHeight="200.0" prefWidth="200.0" />
+        <TextField fx:id="inputValueField" layoutX="35.0" layoutY="121.0" prefHeight="25.0" prefWidth="170.0" />
+        <Button fx:id="convert" layoutX="91.0" layoutY="228.0" mnemonicParsing="false" onAction="#convert" text="Convert" />
+        <Label layoutX="364.0" layoutY="57.0" text="Conversion Results">
+            <font>
+                <Font name="System Bold" size="17.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
