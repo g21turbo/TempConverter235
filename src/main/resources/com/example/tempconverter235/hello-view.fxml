@@ -26,14 +26,15 @@
             </menus>
         </MenuBar>
         <ComboBox fx:id="comboBox1" layoutX="35.0" layoutY="90.0" prefHeight="25.0" prefWidth="170.0" promptText="Select a Unit to Convert" />
-        <ComboBox fx:id="comboBox2" layoutX="35.0" layoutY="178.0" prefHeight="25.0" prefWidth="170.0" promptText="Select a Unit to Convert" />
         <TextArea fx:id="resultArea" layoutX="340.0" layoutY="90.0" prefHeight="200.0" prefWidth="200.0" />
         <TextField fx:id="inputValueField" layoutX="35.0" layoutY="121.0" prefHeight="25.0" prefWidth="170.0" />
-        <Button fx:id="convert" layoutX="91.0" layoutY="228.0" mnemonicParsing="false" onAction="#convert" text="Convert" />
         <Label layoutX="364.0" layoutY="57.0" text="Conversion Results">
             <font>
                 <Font name="System Bold" size="17.0" />
             </font>
         </Label>
+      <ComboBox fx:id="comboBox2" layoutX="35.0" layoutY="203.0" prefHeight="25.0" prefWidth="170.0" promptText="Select a Unit to Convert" />
+      <Label layoutX="106.0" layoutY="167.0" text="To" />
+      <Button fx:id="convert" layoutX="87.0" layoutY="243.0" mnemonicParsing="false" text="Convert" onAction="#convert" />
     </children>
 </AnchorPane>
